@@ -2,9 +2,9 @@ def main():
 
     try:
 
-      miles = float(input("Please enter the number of miles driven: "))
+      miles_entered= float(input("Please enter the number of miles driven: "))
 
-      miles_to_kilometers(miles)
+      miles_to_kilometers(miles_entered)
 
     except:
 
@@ -14,11 +14,11 @@ def main():
 
       main()
 
-def miles_to_kilometers(miles):
+def miles_to_kilometers(miles_entered):
 
-  kilometers = miles * 1.60934
+  kilometers = miles_entered * 1.60934
 
-  print(f"This converts {miles} miles to {kilometers} kilometers.")
+  print(f"This converts {miles_entered} miles to {kilometers} kilometers.")
 
 main()
 
